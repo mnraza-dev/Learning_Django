@@ -1,18 +1,8 @@
-<!DOCTYPE html>
-{% load static %}
+{% extends 'layout.html' %} 
+{% block title %} Home Page {% endblock  %} {%
+block content %}
+<h1>Home Page</h1>
 
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home Page</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
-    <script src="{% static 'js/script.js' %}" defer></script>
-  </head>
-  <body>
-    <h1>Home Page</h1>
-
-    <a href="/about"> Check out my About Page</a>
-    <a href="/posts"> See Posts</a>
-  </body>
-</html>
+<a href="/about"> Check out my About Page</a>
+<a href="/posts"> See Posts</a>
+{% endblock %}

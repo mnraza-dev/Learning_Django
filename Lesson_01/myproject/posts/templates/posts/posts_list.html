@@ -1,13 +1,7 @@
-<!DOCTYPE html>
-{% load static %}
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Posts List</title>
-    <link rel="stylesheet" href=" {% static 'css/style.css' %}">
-  </head>
-  <body>
-    <h1>Posts List</h1>
-  </body>
-</html>
+{% extends 'layout.html' %} {% block title %} Posts List Page {% endblock %} {%
+block content %}
+
+<h1>Posts List Page</h1>
+
+<a href="/">Go back to Home Page</a>
+{% endblock %}
