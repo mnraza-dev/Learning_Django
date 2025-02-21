@@ -5,5 +5,6 @@ from course import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.laern_django  ),
+    path('learndj/', views.learn_django  ),
+    path('learnpython/', views.learn_python  ),
 ]
