@@ -1,10 +1,7 @@
-
 from django.contrib import admin
-from django.urls import path
-from course import views
+from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('learndj/', views.learn_django  ),
-    path('learnpython/', views.learn_python  ),
+    path('', include('course.urls')  ),
 ]
